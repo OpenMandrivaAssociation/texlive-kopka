@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-kopka
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive kopka package
 Group:		Publishing
@@ -142,6 +148,7 @@ TeXLive kopka package.
 %doc %{_texmfdistdir}/doc/latex/kopka/uebungen/kapitel8/uebb.tex
 %doc %{_texmfdistdir}/doc/latex/kopka/uebungen/kapitel8/uebc.aux
 %doc %{_texmfdistdir}/doc/latex/kopka/uebungen/kapitel8/uebc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -152,3 +159,5 @@ TeXLive kopka package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
