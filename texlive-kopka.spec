@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-kopka
 Version:	20111103
-Release:	6
+Release:	7
 Summary:	TeXLive kopka package
 Group:		Publishing
 URL:		http://tug.org/texlive
